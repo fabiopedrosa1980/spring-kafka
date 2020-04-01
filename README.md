@@ -16,11 +16,9 @@ docker run --rm -p 2181:2181 -p 3030:3030 -p 8081-8083:8081-8083 -p 9581-9585:95
 
 <http://localhost:9000/kafka/publish>
 
-- Method 
-  - Post
+- Method: POST 
 - Raw 	
-- Type
- - Json
+- Type: JSON
 <code>
 {	
   "id": 1,
