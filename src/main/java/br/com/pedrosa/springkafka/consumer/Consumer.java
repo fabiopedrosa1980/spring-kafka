@@ -12,7 +12,7 @@ import java.io.IOException;
 @Log4j2
 public class Consumer {
 
-    @KafkaListener(topics = "users", groupId = "group_id",clientIdPrefix = "json",
+    @KafkaListener(topics = "persons", groupId = "group_id",clientIdPrefix = "json",
             containerFactory = "kafkaListenerContainerFactory")
     public void consume(Person person) throws IOException {
         log.info("Consumed Person: {} ", person);

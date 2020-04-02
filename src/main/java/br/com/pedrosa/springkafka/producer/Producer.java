@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class Producer {
 
-    private static final String TOPIC = "users";
+    private static final String TOPIC = "persons";
 
     private final KafkaTemplate<String, Person> kafkaTemplate;
 
